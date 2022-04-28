@@ -1,0 +1,1430 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,400;1,500;1,700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background: hsl(355, 100%, 74%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 150px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+
+.div5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img1 {
+    width: 80px;
+    margin-right: 20px;
+}
+
+.content {
+    display: none;
+}
+
+.conten {
+    display: none;
+}
+
+.conte {
+    display: none;
+}
+
+.div100 {
+    display: none;
+}
+
+.ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.ul li {
+    position: relative;
+    font-family: 'Overpass', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    padding: 20px;
+    opacity: 80%;
+}
+
+.ul li:hover {
+    text-decoration: underline;
+    opacity: 100%;
+}
+
+.ul li:hover .img2 {
+    transform: rotate(180deg);
+}
+
+.ul a {
+    color: white;
+    text-decoration: none;
+}
+
+.ul li:hover .div1 {
+    display: block;
+}
+
+.div1 {
+    position: absolute;
+    top: 58px;
+    left: 0;
+    background: white;
+    display: none;
+    width: 150px;
+    border-radius: 5px;
+    height: 130px;
+    padding: 30px 20px 20px 20px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.div1 ul {
+    list-style: none;
+    margin-left: -40px;
+}
+
+.div1 li {
+    color: hsl(237, 17%, 21%);
+    padding: 0; 
+    opacity: 70%;
+    margin-bottom: 10px;
+}
+
+.div1 li:hover {
+    opacity: 100%;
+    text-decoration: none;
+}
+
+.div2 {
+    display: flex;
+    align-items: center;
+}
+
+.div3 {
+    color: white;
+    padding: 12px 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.div4 {
+    background: white;
+    color: hsl(353, 100%, 62%);
+    padding: 12px 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 60px;
+    transition: 0.3s all ease;
+}
+
+.div4:hover {
+    background: rgba(100%,100%,100%,0.3);
+    color: white;
+}
+
+label {
+    display: none;
+}
+
+@media screen and (max-width: 1023px) {
+    .navbar {
+        padding: 15px 50px;
+    }
+
+.img1 {
+    width: 70px;
+    margin-right: 0px;
+}
+
+.ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.ul li {
+    position: relative;
+    font-family: 'Overpass', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    padding: 20px 10px;
+    opacity: 80%;
+}
+
+.ul li:hover {
+    text-decoration: underline;
+    opacity: 100%;
+}
+
+.ul li:hover .img2 {
+    transform: rotate(180deg);
+}
+
+.ul a {
+    color: white;
+    text-decoration: none;
+}
+
+.ul li:hover .div1 {
+    display: block;
+}
+
+.div1 {
+    position: absolute;
+    top: 58px;
+    left: 0;
+    background: white;
+    display: none;
+    width: 150px;
+    border-radius: 5px;
+    height: max-content;
+    padding: 30px 20px 20px 20px; 
+}
+
+.div1 ul {
+    list-style: none;
+    margin-left: -40px;
+}
+
+.div1 li {
+    color: hsl(237, 23%, 32%);
+    padding: 0; 
+    opacity: 100%;
+    margin-bottom: 10px;
+}
+
+.div1 li:hover {
+    color: hsl(237, 17%, 21%);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.div2 {
+    display: flex;
+    align-items: center;
+}
+
+.div3 {
+    color: white;
+    padding: 12px 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.div4 {
+    background: white;
+    color: hsl(353, 100%, 62%);
+    padding: 12px 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 60px;
+    transition: 0.3s all ease;
+}
+
+.div4:hover {
+    background: rgba(100%,100%,100%,0.3);
+    color: white;
+}
+
+}
+
+@media screen and (max-width: 767px) {
+    .ul {
+        display: none;
+    }
+
+    .img1 {
+        width: 80px;
+    }
+
+    .navbar {
+        padding: 20px 30px;
+        box-sizing: border-box;
+    }
+
+    .div2 {
+        display: none;
+    }
+
+    label {
+        display: block;
+    }
+
+    label img {
+        width: 32px;
+        height: 18px;
+        transition: 0.5s all ease;
+    }
+
+    .label {
+        position: relative;;
+    }
+
+    .img3 {
+        transition: 0.5s all ease;
+    }
+
+    .img4 {
+        width: 22px;
+        height: 20px;
+        margin-left: -27px;
+        opacity: 0;
+    }
+
+    .back {
+        width: 100%;
+        left: 0;
+        top: -100vh;
+        transition: 0.5s all ease;
+        position: absolute;
+        padding: 0 30px 0 30px;
+        opacity: 0;
+        align-items: center;
+    }
+
+    .dropdown {
+        background: white;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+        border-radius: 5px;
+        height: calc(100vh - 101.67px);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .div100 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    
+    .div101 {
+        color: hsl(237, 23%, 32%);
+        padding: 12px 40px;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .div102 {
+        background: hsl(353, 100%, 62%);
+        color: white;
+        padding: 15px 40px;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 60px;
+        transition: 0.3s all ease;
+    }
+
+    .click {
+        font-family: 'Overpass', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        color: hsl(237, 23%, 32%);
+        display: flex;
+        align-items: center;
+        width: max-content;
+        margin: 30px auto 0 auto;
+    }
+
+    .click img {
+        width: 10px;
+        height: 8px;
+        margin-left: 5px;
+        transition: 0s all ease;
+    }
+
+    .clic {
+        font-family: 'Overpass', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        color: hsl(237, 23%, 32%);
+        display: flex;
+        align-items: center;
+        width: max-content;
+        margin: 30px auto 0 auto;
+    }
+
+    .clic img {
+        width: 10px;
+        height: 8px;
+        margin-left: 5px;
+        transition: 0s all ease;
+    }
+
+    .cli {
+        font-family: 'Overpass', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        color: hsl(237, 23%, 32%);
+        display: flex;
+        align-items: center;
+        width: max-content;
+        margin: 30px auto 0 auto;
+    }
+
+    .cli img {
+        width: 10px;
+        height: 8px;
+        margin-left: 5px;
+        transition: 0s all ease;
+    }
+
+    .content {
+        background: yellow;
+        width: 100%;
+        font-family: 'Overpass', sans-serif;
+        font-size: 17px;
+        font-weight: 600;
+        color: hsl(237, 23%, 32%);
+        margin: 10px 0 30px 0;
+        display: none;
+        padding: 5px 0;
+        border-radius: 5px;
+    }
+
+    .content p {
+        margin-top: 30px;
+    }
+
+    .conten p {
+        margin-top: 30px;
+    }
+
+    .conte p {
+        margin-top: 30px;
+    }
+
+    .conten {
+        background: yellow;
+        width: 100%;
+        font-family: 'Overpass', sans-serif;
+        font-size: 17px;
+        font-weight: 600;
+        color: hsl(237, 23%, 32%);
+        display: none;
+        margin: 10px 0 30px 0;
+        padding: 5px 0;
+        border-radius: 5px;
+    }
+
+    .conte {
+        background: yellow;
+        width: 100%;
+        font-family: 'Overpass', sans-serif;
+        font-size: 17px;
+        font-weight: 600;
+        color: hsl(237, 23%, 32%);
+        display: none;
+        margin: 10px 0 30px 0;
+        padding: 5px 0;
+        border-radius: 5px;
+    }
+
+    #label:checked ~ .border .image {
+        transform: rotate(180deg);
+    }
+
+    #lab:checked ~ .borde .image {
+        transform: rotate(180deg);
+    }
+
+    #labe:checked ~ .bord .image {
+        transform: rotate(180deg);
+    }
+
+    #input:checked ~ .drop .back {
+        top: 71.67px;
+        left: 0;
+        opacity: 100%;
+    }
+
+    #label:checked ~ .border .content {
+        display: block;
+    }
+
+    #labe:checked ~ .bord .conte {
+        display: block;
+    }
+
+    #lab:checked ~ .borde .conten {
+        display: block;
+    }
+
+    #label:checked ~ .border {
+        border-bottom: 1px solid yellow;
+    }
+
+    #labe:checked ~ .bord {
+        border-bottom: 1px solid yellow;
+    }
+
+    #lab:checked ~ .borde {
+        border-bottom: 1px solid yellow;
+    }
+
+    #input:checked ~ .drop .img4 {
+        opacity: 100%;
+    }
+
+    #input:checked ~ .drop .img3 {
+        opacity: 0;
+    }
+    
+
+}
+
+.div6 {
+    background: hsl(355, 100%, 74%);
+    height: 320px;
+    width: 100%;
+    position: relative;
+    z-index: -2;
+    margin-top: -16px;
+    border-radius: 0 0 0 70px;
+}
+
+.div6 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.div7 {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center; 
+    padding: 50px 0;
+    color: white;
+}
+
+.div7 p {
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 20px 0 35px 0;
+}
+
+.div7 p:first-child {
+    font-family: 'Overpass', sans-serif;
+    font-size: 53px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.div8 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 270px;
+    margin: 0 auto;
+} 
+
+.div8 div {
+    padding: 10px 10px;
+    font-family: 'Overpass', sans-serif;
+    font-size: 12px;
+    width: 130px;
+    font-weight: 800;
+    border-radius: 60px;
+    border: 1px solid white;
+}
+
+.div9 {
+    background: white;
+    color: hsl(356, 100%, 66%);
+    margin-right: 5px;
+}
+
+.div9:hover {
+    background: rgba(100%,100%,100%,0.3);
+    color: white;
+}
+
+.div10 {
+    color: white;
+    margin-left: 5px;
+    background: hsl(356, 100%, 66%);
+}
+
+.div10:hover {
+    background: white;
+    color: hsl(356, 100%, 66%);
+}
+
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1023px) {
+    .div6 {
+        background: hsl(355, 100%, 74%);
+        height: 320px;
+        width: 100%;
+        position: relative;
+        z-index: -2;
+        margin-top: -16px;
+        border-radius: 0 0 0 90px;
+        padding: 0 30px;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+    
+    .div6 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    
+    .div7 {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center; 
+        padding: 50px 0;
+        color: white;
+    }
+    
+    .div7 p {
+        font-family: 'Overpass', sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        margin: 20px 0 35px 0;
+    }
+    
+    .div7 p:first-child {
+        font-family: 'Overpass', sans-serif;
+        font-size: 45px;
+        font-weight: 400;
+        margin: 0;
+    }
+    
+    .div8 {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 300px;
+        margin: 0 auto;
+    } 
+    
+    .div8 div {
+        padding: 10px 10px;
+        font-family: 'Overpass', sans-serif;
+        font-size: 14px;
+        width: 130px;
+        font-weight: 800;
+        border-radius: 60px;
+        border: 1px solid white;
+    }
+    
+    .div9 {
+        background: white;
+        color: hsl(356, 100%, 66%);
+        margin-right: 5px;
+    }
+    
+    .div9:hover {
+        background: rgba(100%,100%,100%,0.3);
+        color: white;
+    }
+    
+    .div10 {
+        color: white;
+        margin-left: 5px;
+        background: hsl(356, 100%, 66%);
+    }
+    
+    .div10:hover {
+        background: white;
+        color: hsl(356, 100%, 66%);
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .div6 {
+        background: hsl(355, 100%, 74%);
+        height: 480px;
+        width: 100%;
+        position: relative;
+        z-index: -2;
+        margin-top: -16px;
+        border-radius: 0 0 0 100px;
+        padding: 50px 30px;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+    
+    .div6 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    
+    .div7 {
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center; 
+        padding: 50px 0;
+        color: white;
+    }
+    
+    .div7 p {
+        font-family: 'Overpass', sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        margin: 20px 0 35px 0;
+    }
+    
+    .div7 p:first-child {
+        font-family: 'Overpass', sans-serif;
+        font-size: 35px;
+        font-weight: 500;
+        margin: 0;
+    }
+    
+    .div8 {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: max-content;
+        margin: 0 auto;
+    } 
+    
+    .div8 div {
+        padding: 15px 10px;
+        font-family: 'Overpass', sans-serif;
+        font-size: 15px;
+        width: 140px;
+        font-weight: 800;
+        border-radius: 60px;
+        border: 1px solid white;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .div9 {
+        background: white;
+        color: hsl(356, 100%, 66%);
+        margin-right: 5px;
+    }
+    
+    .div9:hover {
+        background: rgba(100%,100%,100%,0.3);
+        color: white;
+    }
+    
+    .div10 {
+        color: white;
+        margin-left: 5px;
+        background: hsl(356, 100%, 66%);
+    }
+    
+    .div10:hover {
+        background: white;
+        color: hsl(356, 100%, 66%);
+    }
+
+}
+
+.ill-mob {
+    display: none;
+    width: 100%;
+}
+
+.div11 {
+    padding: 120px 0 0 150px;
+}
+
+.div11 p {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0;
+    color: hsl(237, 23%, 32%);
+}
+
+.div12 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.div13 {
+    width: 45%;
+}
+
+.div13 p {
+    font-family: 'Overpass', sans-serif;
+    font-size: 15.6px;
+    font-weight: 600;
+    text-align: left;
+    opacity: 50%;
+    line-height: 30px;
+}
+
+.div13 .p2, .div13 .p3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    opacity: 100%;
+    margin: 70px 0 30px 0;
+}
+
+.div14 {
+    background-image: url("./image/illustration-editor-desktop.svg");
+    width: 50%;
+    margin-top: -120px;
+    background-size: cover;
+    height: 800px;
+}
+
+.div15 {
+    display: none;
+}
+
+@media screen and (max-width: 1023px) {
+    .ill-mob {
+        display: none;
+        width: 100%;
+    }
+    
+    .div11 {
+        padding: 120px 0 0 50px;
+    }
+    
+    .div11 p {
+        text-align: center;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+        margin: 0;
+    }
+    
+    .div12 {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+    
+    .div13 {
+        width: 45%;
+    }
+    
+    .div13 p {
+        font-family: 'Overpass', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: left;
+        opacity: 50%;
+        line-height: 30px;
+    }
+    
+    .div13 .p2, .div13 .p3 {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        opacity: 100%;
+        margin: 70px 0 30px 0;
+    }
+    
+    .div14 {
+        background-image: url("./image/illustration-editor-desktop.svg");
+        width: 50%;
+        margin-top: -120px;
+        background-size: cover;
+        height: 800px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .div11 {
+        padding: 120px 30px 0 30px;
+    }
+    
+    .div11 p {
+        text-align: center;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 25px;
+        font-weight: 600;
+        margin: 0;
+    }
+    
+    .div12 {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        flex-direction: column;
+    }
+    
+    .div13 {
+        width: 100%;
+    }
+    
+    .div13 p {
+        font-family: 'Overpass', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        opacity: 50%;
+        line-height: 30px;
+    }
+    
+    .div13 .p2, .div13 .p3 {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+        opacity: 100%;
+        margin: 70px 0 30px 0;
+    }
+    
+    .div14 {
+        background-image: url("./image/illustration-editor-desktop.svg");
+        width: 50%;
+        margin-top: -120px;
+        background-size: cover;
+        height: 800px;
+        display: none;
+    }
+
+    .div15 {
+        background-image: url("./image/illustration-editor-mobile.svg");
+        width: 100%;
+        height: 280px;
+        background-size: cover;
+        display: block;
+        margin-left: -15px;
+    }
+
+}
+
+.div16 {
+    background: hsl(237, 17%, 21%);
+    height: 370px;
+    padding: 0px 150px 0px 100px;
+    position: relative;
+    z-index: -2;
+    margin: 50px 0;
+    border-radius: 0 100px 0 100px;
+}
+
+.div17 {
+    background-image: url("./image/bg-pattern-circles.svg");
+    height: 370px;
+    width: 80%;
+    background-position: bottom;
+    background-size: cover; 
+    position: absolute;
+    left: -300px;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 0 100px 0 100px;
+}
+
+.div18 {
+    width: 45%;
+    margin-top: 40px;
+}
+
+.div18 img {
+    width: 100%;
+    height: 50%;
+}
+
+.div19 {
+    width: 53%;
+}
+
+.div19 p {
+    font-family: 'Overpass', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    opacity: 50%;
+    color: white;
+    line-height: 30px;
+}
+
+.div19 p:first-child {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    opacity: 100%;
+    line-height: 50px;
+}
+
+.div20 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+    .div16 {
+        background: hsl(237, 17%, 21%);
+        height: 370px;
+        padding: 0px 50px 0px 0px;
+        position: relative;
+        z-index: -2;
+        margin: 50px 0;
+        border-radius: 0 100px 0 100px;
+    }
+    
+    .div17 {
+        background-image: url("./image/bg-pattern-circles.svg");
+        height: 370px;
+        width: 80%;
+        background-position: bottom;
+        background-size: cover; 
+        position: absolute;
+        left: -200px;
+        bottom: 0;
+        z-index: -1;
+        border-radius: 0 100px 0 100px;
+    }
+    
+    .div18 {
+        width: 53%;
+        margin-top: 40px;
+    }
+    
+    .div18 img {
+        width: 100%;
+    }
+    
+    .div19 {
+        width: 45%;
+    }
+    
+    .div19 p {
+        font-family: 'Overpass', sans-serif;
+        font-size: 13.5px;
+        font-weight: 600;
+        opacity: 50%;
+        color: white;
+        line-height: 20px;
+    }
+    
+    .div19 p:first-child {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 25px;
+        font-weight: 500;
+        opacity: 100%;
+        line-height: 40px;
+    }
+    
+    .div20 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .div16 {
+        background: hsl(237, 17%, 21%);
+        height: max-content;
+        width: 100%;
+        padding: 0px 30px 100px 30px;
+        position: relative;
+        z-index: -2;
+        margin: 250px 0 50px 0;
+        border-radius: 0 100px 0 100px;
+    }
+    
+    .div17 {
+        background-image: url("./image/bg-pattern-circles.svg");
+        height: 90%;
+        width: 100%;
+        background-position: -120px -200px;
+        background-size: cover; 
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        border-radius: 0 100px 0 100px;
+    }
+    
+    .div18 {
+        width: 100%;
+        margin-top: -170px;
+        height: 350px;
+    }
+    
+    .div18 img {
+        width: 100%;
+        height: 100%;
+
+    }
+    
+    .div19 {
+        width: 100%;
+        margin-top: 60px;
+    }
+    
+    .div19 p {
+        font-family: 'Overpass', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        opacity: 70%;
+        color: white;
+        line-height: 30px;
+        text-align: center;
+    }
+    
+    .div19 p:first-child {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 45px;
+        margin: 0 0 30px 0;
+        font-weight: 500;
+        opacity: 100%;
+        line-height: 50px;
+    }
+    
+    .div20 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+.div21 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 50px 150px 0 0;
+}
+
+.div22 {
+    width: 50%;
+    height: 700px;
+    background-position: -260px 0px;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-image: url("./image/illustration-laptop-desktop.svg");
+}
+
+.div23 {
+    width: 45%;
+}
+
+.div23 p {
+    font-family: 'Overpass', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    opacity: 70%;
+    color: hsl(237, 23%, 32%);
+    margin: 0;
+}
+
+.div23 .p4 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    margin: 0 0 25px 0;
+    font-weight: 600;
+    opacity: 100%;
+}
+
+.div23 .p5 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    margin: 60px 0 25px 0;
+    font-weight: 600;
+    opacity: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+    .div21 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 50px 50px 0 0;
+    }
+    
+    .div22 {
+        width: 50%;
+        height: 600px;
+        background-position: -260px 0px;
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-image: url("./image/illustration-laptop-desktop.svg");
+    }
+    
+    .div23 {
+        width: 45%;
+    }
+    
+    .div23 p {
+        font-family: 'Overpass', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        opacity: 70%;
+        color: hsl(237, 23%, 32%);
+        margin: 0;
+    }
+    
+    .div23 .p4 {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 25px;
+        margin: 0 0 25px 0;
+        font-weight: 600;
+        opacity: 100%;
+    }
+    
+    .div23 .p5 {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 25px;
+        margin: 60px 0 25px 0;
+        font-weight: 600;
+        opacity: 100%;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .div21 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 50px 30px 0 30px;
+    }
+    
+    .div22 {
+        width: 100%;
+        height: 340px;
+        background-position: center;
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-image: url("./image/illustration-laptop-mobile.svg");
+    }
+    
+    .div23 {
+        width: 100%;
+    }
+    
+    .div23 p {
+        font-family: 'Overpass', sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+        opacity: 70%;
+        color: hsl(237, 23%, 32%);
+        margin: 0;
+        text-align: center;
+        line-height: 30px;
+    }
+    
+    .div23 .p4 {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 25px;
+        margin: 40px 0 25px 0;
+        font-weight: 600;
+        opacity: 100%;
+    }
+    
+    .div23 .p5 {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 30px;
+        margin: 60px 0 25px 0;
+        font-weight: 600;
+        opacity: 100%;
+    }
+
+}
+
+.div24 {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 200px;
+    margin-top: 100px;
+    background: hsl(240, 10%, 16%);
+    border-radius: 0 100px 0 0;
+    width: 100%;
+}
+
+.div25 img {
+    width: 80px;
+}
+
+.div26 .p6 {
+    font-family: 'Overpass', sans-serif;
+    font-size: 13px;
+    margin: 60px 0 25px 0;
+    font-weight: 600;
+    opacity: 100%;
+    color: white;
+    margin: 0 0 30px 0;
+}
+
+.div26 p {
+    margin: 10px 0 0 0; 
+    font-size: 14px;
+    font-family: 'Overpass', sans-serif;
+    opacity: 70%;
+}
+
+.div26 a {
+    color: white;
+    text-decoration: none;
+}
+
+.div26 a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1023px) {
+    .div24 {
+        display: flex;
+        justify-content: space-between;
+        padding: 70px 50px;
+        background: hsl(240, 10%, 16%);
+        border-radius: 0 100px 0 0;
+        width: 100%;
+    }
+    
+    .div25 img {
+        width: 80px;
+    }
+    
+    .div26 .p6 {
+        font-family: 'Overpass', sans-serif;
+        font-size: 13px;
+        margin: 60px 0 25px 0;
+        font-weight: 600;
+        opacity: 100%;
+        color: white;
+        margin: 0 0 30px 0;
+    }
+    
+    .div26 p {
+        margin: 10px 0 0 0; 
+        font-size: 14px;
+        font-family: 'Overpass', sans-serif;
+        opacity: 70%;
+    }
+    
+    .div26 a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .div26 a:hover {
+        text-decoration: underline;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .div24 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 80px 50px;
+        background: hsl(240, 10%, 16%);
+        border-radius: 0 100px 0 0;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .div25 img {
+        width: 120px;
+        margin-bottom: 20px;
+    }
+    
+    .div26 .p6 {
+        font-family: 'Overpass', sans-serif;
+        font-size: 23px;
+        margin: 60px 0 25px 0;
+        font-weight: 500;
+        opacity: 100%;
+        color: white;
+        margin: 0 0 30px 0;
+    }
+
+    .div26 {
+        margin-top: 50px;
+    }
+    
+    .div26 p {
+        margin: 20px 0 0 0; 
+        font-size: 22px;
+        font-family: 'Overpass', sans-serif;
+        opacity: 70%;
+    }
+    
+    .div26 a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .div26 a:hover {
+        text-decoration: underline;
+    }
+
+}
